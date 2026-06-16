@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamed Rizwan — Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── CANVAS BACKGROUND ─────────────────────────────────────── -->
+<canvas id="canvas-bg"></canvas>
+
+<!-- ── NAV ────────────────────────────────────────────────────── -->
+<nav id="navbar">
+  <div class="logo">&lt;<span>MR.Rizwan</span> /&gt;</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ── HERO ───────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Hello, It's Me I'm</p>
+    <h1 class="hero-name">Mohamed<br><span class="highlight">Rizwan</span></h1>
+    <p class="hero-title" id="typedTitle" style="color: rgb(161, 167, 162);"><span id="typed"></span><span class="typed-cursor">_</span></p>
+    <p class="hero-desc">
+      I craft fast, pixel-perfect web experiences — from clean front-end interfaces to
+      robust server-side architectures. Based wherever the Wi-Fi is good.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary"><span>View My Work</span></a>
+      <a href="#contact" class="btn btn-outline">Let's Talk</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="mouse"></div>
+    <span>Scroll</span>
+  </div>
+  
+        <div class="image"><img src="img/a.jpg"></div>
+        
+</section>
+
+<!-- ── ABOUT ──────────────────────────────────────────────────── -->
+<section id="about">
+  <p class="section-label reveal">01 — About Me</p>
+  <h2 class="section-title reveal">Who I Am</h2>
+  <div class="section-divider reveal"></div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        I'm <strong>Mohamed Rizwan</strong>, a passionate Full Stack Web Developer who loves
+        building digital products that are both technically solid and genuinely enjoyable to use.
+      </p>
+      <p>
+        With hands-on expertise in <strong>HTML5, CSS3, JavaScript, PHP,</strong> and <strong>MySQL</strong>,
+        I design and develop complete web solutions — from the user interface down to the database schema.
+      </p>
+      <p>
+        I care deeply about clean code, performance, and detail. Whether it's an interactive UI animation or
+        a complex backend query, I make sure it's done right.
+      </p>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="num" data-count="3">0</div>
+          <div class="label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="num" data-count="20">0</div>
+          <div class="label">Projects Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="num" data-count="5">0</div>
+          <div class="label">Core Technologies</div>
+        </div>
+        <div class="stat-card">
+          <div class="num" data-count="15">0</div>
+          <div class="label">Happy Clients</div>
+        </div>
+      </div>
+    </div>
+    <div class="avatar-wrap reveal">
+      <div class="avatar-hex">
+        <span class="avatar-emoji">👨‍💻</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ─────────────────────────────────────────────────── -->
+<section id="skills">
+  <p class="section-label reveal">02 — Skills</p>
+  <h2 class="section-title reveal">What I Work With</h2>
+  <div class="section-divider reveal"></div>
+  <div class="skills-grid">
+    <div class="skill-card reveal" data-delay="0">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">HTML5</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-pct="95"></div></div>
+      <div class="skill-pct">95%</div>
+    </div>
+    <div class="skill-card reveal" data-delay="80">
+      <div class="skill-icon">🎨</div>
+      <div class="skill-name">CSS3</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-pct="90"></div></div>
+      <div class="skill-pct">90%</div>
+    </div>
+    <div class="skill-card reveal" data-delay="160">
+      <div class="skill-icon">⚡</div>
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-pct="85"></div></div>
+      <div class="skill-pct">85%</div>
+    </div>
+    <div class="skill-card reveal" data-delay="240">
+      <div class="skill-icon">🐘</div>
+      <div class="skill-name">PHP</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-pct="80"></div></div>
+      <div class="skill-pct">80%</div>
+    </div>
+    <div class="skill-card reveal" data-delay="320">
+      <div class="skill-icon">🗄️</div>
+      <div class="skill-name">MySQL</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-pct="82"></div></div>
+      <div class="skill-pct">82%</div>
+    </div>
+    <div class="skill-card reveal" data-delay="400">
+      <div class="skill-icon">📱</div>
+      <div class="skill-name">Responsive Design</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-pct="92"></div></div>
+      <div class="skill-pct">92%</div>
+    </div>
+    <div class="skill-card reveal" data-delay="480">
+      <div class="skill-icon">🔧</div>
+      <div class="skill-name">REST APIs</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-pct="78"></div></div>
+      <div class="skill-pct">78%</div>
+    </div>
+    <div class="skill-card reveal" data-delay="560">
+      <div class="skill-icon">🔐</div>
+      <div class="skill-name">Web Security</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-pct="75"></div></div>
+      <div class="skill-pct">75%</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ────────────────────────────────────────────────── -->
+<section id="projects">
+  <p class="section-label reveal">03 — Projects</p>
+  <h2 class="section-title reveal">Featured Work</h2>
+  <div class="section-divider reveal"></div>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-thumb p-blue">🛒</div>
+      <div class="project-body">
+        <div class="project-title">E-Commerce Platform</div>
+        <p class="project-desc">
+          A full-featured online store with product listings, a PHP/MySQL backend,
+          session-based cart, admin dashboard, and PayPal payment integration.
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span>
+          <span class="tag">PHP</span><span class="tag">MySQL</span>
+          <span class="tag">JavaScript</span>
+        </div>
+    
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb p-purple">📋</div>
+      <div class="project-body">
+        <div class="project-title">Task Management App</div>
+        <p class="project-desc">
+          A drag-and-drop Kanban board with real-time updates, user authentication,
+          role-based access control, and a RESTful PHP API.
+        </p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span><span class="tag">PHP</span>
+          <span class="tag">MySQL</span><span class="tag">CSS3</span>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb p-teal">🏥</div>
+      <div class="project-body">
+        <div class="project-title">Hospital Management System</div>
+        <p class="project-desc">
+          Comprehensive system for patient records, appointment scheduling, billing,
+          and staff management using PHP & MySQL with a responsive CSS3 UI.
+        </p>
+        <div class="project-tags">
+          <span class="tag">PHP</span><span class="tag">MySQL</span>
+          <span class="tag">HTML5</span><span class="tag">CSS3</span>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb p-blue">📰</div>
+      <div class="project-body">
+        <div class="project-title">News & Blog CMS</div>
+        <p class="project-desc">
+          A custom content management system with WYSIWYG editor, category management,
+          SEO fields, comment moderation, and multi-author support.
+        </p>
+        <div class="project-tags">
+          <span class="tag">PHP</span><span class="tag">MySQL</span>
+          <span class="tag">JavaScript</span><span class="tag">HTML5</span>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb p-purple">💬</div>
+      <div class="project-body">
+        <div class="project-title">Real-Time Chat App</div>
+        <p class="project-desc">
+          Browser-based chat application with WebSocket-like long polling, PHP backend,
+          user rooms, read receipts, and emoji reactions.
+        </p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span><span class="tag">PHP</span>
+          <span class="tag">MySQL</span><span class="tag">CSS3</span>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb p-teal">📊</div>
+      <div class="project-body">
+        <div class="project-title">Analytics Dashboard</div>
+        <p class="project-desc">
+          Interactive data dashboard with Chart.js visualizations, PHP data API,
+          date-range filtering, and CSV export functionality.
+        </p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span><span class="tag">PHP</span>
+          <span class="tag">MySQL</span><span class="tag">Chart.js</span>
+        </div>
+      
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ─────────────────────────────────────────────── -->
+<section id="experience">
+  <p class="section-label reveal">04 — Experience</p>
+  <h2 class="section-title reveal">My Journey</h2>
+  <div class="section-divider reveal"></div>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-period">2024 — Present</p>
+      <p class="tl-role">Full Stack Web Developer</p>
+      <p class="tl-company">Freelance / Self-Employed</p>
+      <p class="tl-desc">Designing and developing end-to-end web solutions for clients across e-commerce, healthcare, and education sectors. Delivering responsive, accessible, and secure applications using the full PHP + MySQL + JS stack.</p>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-period">2025 — Present</p>
+      <p class="tl-role">BIT Student</p>
+      <p class="tl-company">University of morattuwa</p>
+      <p class="tl-desc">An undergraduate BIT student at the University of Moratuwa, passionate about web engineering. Enhancing technical skills in programming, relational databases, and system design while preparing to contribute effectively to real-world software engineering challenges.</p>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-period">2023-2024</p>
+      <p class="tl-role">Started Coding Journey</p>
+      <p class="tl-company">Self-Taught</p>
+      <p class="tl-desc">Discovered web development through curiosity. Built first HTML/CSS pages, learned JavaScript fundamentals, and dove deep into PHP & MySQL through personal projects and online resources.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────────────────── -->
+<section id="contact">
+  <p class="section-label reveal">05 — Contact</p>
+  <h2 class="section-title reveal">Get In Touch</h2>
+  <div class="section-divider reveal"></div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <p>
+        I'm open to freelance projects, full-time roles, and interesting collaborations.
+        If you have a web project in mind or just want to say hi — I'd love to hear from you.
+      </p>
+      <div class="contact-links">
+        <div class="contact-link-item">
+          <span class="icon">📧</span>
+          <div class="details">
+            <span class="lbl" style="color: white; font-size: 12px;">Email</span>
+            <span class="val"><a href="https://www.gmail.com/">mimrizwan1994@gmail.com</a></span>
+          </div>
+        </div>
+        <div class="contact-link-item">
+          <span class="icon">💼</span>
+          <div class="details">
+            <span class="lbl" style="color: white; font-size: 12px;">Fiverr</span>
+            <span class="val"><a href="https://www.fiverr.com/s/8zrPymg">https://www.fiverr.com/s/8zrPymg</a></span>
+          </div>
+        </div>
+        <div class="contact-link-item">
+          <span class="icon">🐙</span>
+          <div class="details">
+            <span class="lbl" style="color: white; font-size: 12px;">GitHub</span>
+            <span class="val"><a href="https://github.com/dashboard">https://github.com/dashboard</a></span>
+          </div>
+        </div>
+        <div class="contact-link-item">
+          <span class="icon">📍</span>
+          <div class="details">
+            <span class="lbl" style="color: white; font-size: 12px;">Location</span>
+            <span class="val">Available Remotely</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="john@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Project Inquiry" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="sendMessage()"><span>Send Message ✉️</span></button>
+        <p class="form-msg" id="formMsg">✅ Message sent! I'll get back to you soon.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────── -->
+<footer>
+  
+  <p>Designed &amp; Built by <strong>Mohamed Rizwan</strong> with <span class="heart">♥</span></p>
+  <p style="margin-top:0.4rem; font-size:1rem;">© 2026 All rights reserved.</p>
+</footer>
+
+<!-- ── BACK TO TOP ─────────────────────────────────────────────── -->
+<button id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<!-- ── SCRIPTS ────────────────────────────────────────────────── -->
+<script>
+/* ═══ PARTICLE CANVAS ══════════════════════════════════════════ */
+(function() {
+  const canvas = document.getElementById('canvas-bg');
+  const ctx    = canvas.getContext('2d');
+  let W, H, particles = [];
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', () => { resize(); init(); });
+
+  class Particle {
+    constructor() { this.reset(); }
+    reset() {
+      this.x  = Math.random() * W;
+      this.y  = Math.random() * H;
+      this.r  = Math.random() * 1.5 + 0.3;
+      this.vx = (Math.random() - 0.5) * 0.4;
+      this.vy = (Math.random() - 0.5) * 0.4;
+      this.a  = Math.random() * 0.6 + 0.2;
+      this.color = Math.random() > 0.5 ? '#00D4FF' : '#7C3AED';
+    }
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.globalAlpha = this.a;
+      ctx.fill();
+    }
+    update() {
+      this.x += this.vx;
+      this.y += this.vy;
+      if (this.x < 0 || this.x > W || this.y < 0 || this.y > H) this.reset();
+    }
+  }
+
+  function init() {
+    particles = [];
+    const count = Math.min(Math.floor((W * H) / 8000), 160);
+    for (let i = 0; i < count; i++) particles.push(new Particle());
+  }
+  init();
+
+  function drawLines() {
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < 100) {
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = '#00D4FF';
+          ctx.globalAlpha = (1 - dist/100) * 0.15;
+          ctx.lineWidth   = 0.5;
+          ctx.stroke();
+        }
+      }
+    }
+  }
+
+  function loop() {
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalAlpha = 1;
+    particles.forEach(p => { p.update(); p.draw(); });
+    drawLines();
+    requestAnimationFrame(loop);
+  }
+  loop();
+})();
+
+/* ═══ TYPED EFFECT ════════════════════════════════════════════ */
+(function() {
+  const phrases = [
+    'Full Stack Developer',
+    'PHP & MySQL Expert',
+    'JavaScript Engineer',
+    'UI/UX Implementor',
+    'Web Architect'
+  ];
+  const el = document.getElementById('typed');
+  let pi = 0, ci = 0, deleting = false;
+
+  function type() {
+    const phrase = phrases[pi];
+    if (!deleting) {
+      el.textContent = phrase.slice(0, ci + 1);
+      ci++;
+      if (ci === phrase.length) {
+        deleting = true;
+        setTimeout(type, 1800);
+        return;
+      }
+    } else {
+      el.textContent = phrase.slice(0, ci - 1);
+      ci--;
+      if (ci === 0) {
+        deleting = false;
+        pi = (pi + 1) % phrases.length;
+      }
+    }
+    setTimeout(type, deleting ? 55 : 90);
+  }
+  type();
+})();
+
+/* ═══ SCROLL REVEAL ═══════════════════════════════════════════ */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const delay = entry.target.dataset.delay || 0;
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+        // Animate skill bars
+        const bar = entry.target.querySelector('.skill-bar');
+        if (bar) bar.style.width = bar.dataset.pct + '%';
+        // Animate counters
+        const nums = entry.target.querySelectorAll('[data-count]');
+        nums.forEach(n => animateCount(n));
+      }, parseInt(delay));
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ═══ COUNTER ANIMATION ═══════════════════════════════════════ */
+function animateCount(el) {
+  const target = parseInt(el.dataset.count);
+  let current  = 0;
+  const step   = Math.ceil(target / 40);
+  const timer  = setInterval(() => {
+    current = Math.min(current + step, target);
+    el.textContent = current + (el.closest('.stat-card') ? '+' : '');
+    if (current >= target) clearInterval(timer);
+  }, 35);
+}
+
+/* ═══ TIMELINE REVEAL ═════════════════════════════════════════ */
+const tlObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 150);
+    }
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll('.tl-item').forEach(el => tlObserver.observe(el));
+
+/* ═══ NAV SCROLL ══════════════════════════════════════════════ */
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  const btn = document.getElementById('backTop');
+  nav.classList.toggle('scrolled', window.scrollY > 50);
+  btn.classList.toggle('show', window.scrollY > 400);
+});
+
+/* ═══ HAMBURGER ═══════════════════════════════════════════════ */
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobileNav').classList.toggle('open');
+});
+function closeMobile() {
+  document.getElementById('mobileNav').classList.remove('open');
+}
+
+/* ═══ CONTACT FORM ════════════════════════════════════════════ */
+function sendMessage() {
+  const name    = document.getElementById('name').value.trim();
+  const email   = document.getElementById('email').value.trim();
+  const subject = document.getElementById('subject').value.trim();
+  const message = document.getElementById('message').value.trim();
+  const msg     = document.getElementById('formMsg');
+
+  if (!name || !email || !message) {
+    msg.textContent = '⚠️ Please fill in all required fields.';
+    msg.style.color = '#ff6b6b';
+    msg.classList.add('show');
+    return;
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    msg.textContent = '⚠️ Please enter a valid email address.';
+    msg.style.color = '#ff6b6b';
+    msg.classList.add('show');
+    return;
+  }
+  // Simulate send
+  msg.textContent = '✅ Message sent! I\'ll get back to you soon.';
+  msg.style.color = '#00D4FF';
+  msg.classList.add('show');
+  document.getElementById('name').value    = '';
+  document.getElementById('email').value   = '';
+  document.getElementById('subject').value = '';
+  document.getElementById('message').value = '';
+  setTimeout(() => msg.classList.remove('show'), 5000);
+}
+</script>
+</body>
+</html>
